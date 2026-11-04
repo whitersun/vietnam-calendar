@@ -1,0 +1,160 @@
+{
+  "brand": {
+    "name": "Lịch Việt",
+    "tagline": "Vietnamese dates & occasions"
+  },
+  "page": {
+    "eyebrow": "Make room for what matters",
+    "title": "A clearer view of your days.",
+    "description": "Explore Vietnamese lunar dates, remember special occasions and make time for what matters.",
+    "seoDescription": "Vietnamese solar and lunar calendar, holidays and a time-off calculator. Available in Vietnamese, English, Traditional and Simplified Chinese."
+  },
+  "nav": {
+    "calendar": "Calendar",
+    "planner": "Plan time off",
+    "language": "Language",
+    "skip": "Skip to main content"
+  },
+  "theme": {
+    "label": "Appearance",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "actions": {
+    "today": "Today",
+    "previous": "Previous",
+    "next": "Next",
+    "selectMonth": "Choose month",
+    "selectYear": "Choose year",
+    "share": "Share",
+    "print": "Print",
+    "copied": "Link copied",
+    "shareError": "Could not copy the link. You can copy it from your address bar.",
+    "close": "Close",
+    "reset": "Reset"
+  },
+  "calendar": {
+    "monthView": "Month",
+    "yearView": "Year",
+    "showLunar": "Lunar dates",
+    "lunar": "Lunar calendar",
+    "holiday": "Holiday",
+    "traditional": "Traditional",
+    "observance": "Observance",
+    "weekend": "Weekend",
+    "todayLabel": "Today",
+    "hint": "Choose a day to see more",
+    "keyboardHint": "Use the arrow keys to choose a day",
+    "yearCaption": "Your whole year at a glance",
+    "timezone": "Vietnamese calendar · UTC+7",
+    "range": "Years 2000–2099",
+    "dateLabel": "{date}. Lunar date {lunar}. {events}",
+    "openMonth": "View {month}"
+  },
+  "detail": {
+    "title": "Selected day",
+    "lunarDate": "Day {day}, month {month}, year {year}",
+    "leap": "Leap month",
+    "newMoon": "First lunar day",
+    "fullMoon": "Lunar day 15",
+    "events": "On this day",
+    "noEvents": "No holiday or observance is listed for this day.",
+    "source": "View source",
+    "today": "That's today",
+    "future": "In {count} days",
+    "past": "{count} days ago",
+    "lunarNote": "Vietnamese lunar dates stay the same in every language."
+  },
+  "upcoming": {
+    "title": "Coming up",
+    "description": "From the month you are viewing",
+    "empty": "No upcoming occasions within the calendar range."
+  },
+  "planner": {
+    "title": "Make time for a break",
+    "description": "Choose a date range to estimate the leave days you need.",
+    "start": "Start date",
+    "end": "End date",
+    "weekend": "Weekly days off",
+    "satSun": "Saturday & Sunday",
+    "sun": "Sunday",
+    "days": "Days in range",
+    "weekendDays": "Weekly days off",
+    "leaveDays": "Leave days needed",
+    "excluded": "Holidays marked as days off",
+    "markHolidays": "Exclude marked holidays",
+    "note": "This estimate follows your choices. It does not automatically include the full Tết break, substitute holidays or swapped workdays. Check your workplace schedule.",
+    "invalid": "Choose an end date on or after the start date, within 2000–2099.",
+    "limit": "Calculate up to 366 days at a time.",
+    "open": "Try the time-off calculator",
+    "close": "Collapse"
+  },
+  "footer": {
+    "note": "Holiday dates do not include complete annual breaks, substitute holidays or swapped workdays.",
+    "privacy": "Free to use. No sign-in needed.",
+    "madeFor": "A little perspective on your days."
+  },
+  "holidays": {
+    "newYear": {
+      "name": "New Year's Day",
+      "description": "The first day of the Gregorian year."
+    },
+    "tet": {
+      "name": "Vietnamese Lunar New Year",
+      "description": "The first day of the first lunar month. The full Tết break is announced separately each year and by each workplace."
+    },
+    "firstFullMoon": {
+      "name": "First Full Moon Festival",
+      "description": "The fifteenth day of the first lunar month, known in Vietnam as Tết Nguyên tiêu."
+    },
+    "hungKings": {
+      "name": "Hùng Kings Commemoration",
+      "description": "The tenth day of the third lunar month, commemorating the Hùng Kings."
+    },
+    "reunification": {
+      "name": "Reunification Day",
+      "description": "April 30."
+    },
+    "labour": {
+      "name": "International Labour Day",
+      "description": "May 1."
+    },
+    "doanNgo": {
+      "name": "Tết Đoan Ngọ",
+      "description": "The fifth day of the fifth lunar month, a traditional Vietnamese festival."
+    },
+    "vuLan": {
+      "name": "Vu Lan Festival",
+      "description": "The fifteenth day of the seventh lunar month, an occasion to honour parents."
+    },
+    "nationalDay": {
+      "name": "Vietnam National Day",
+      "description": "September 2. The adjoining day off and any workday swaps follow annual announcements."
+    },
+    "midAutumn": {
+      "name": "Mid-Autumn Festival",
+      "description": "The fifteenth day of the eighth lunar month, a time for family reunions and children's celebrations."
+    },
+    "kitchenGods": {
+      "name": "Kitchen Gods' Day",
+      "description": "The twenty-third day of the twelfth lunar month, marking preparations for the new year."
+    },
+    "womensDay": {
+      "name": "International Women's Day",
+      "description": "March 8. An observance, not automatically a day off."
+    },
+    "vietnameseWomensDay": {
+      "name": "Vietnamese Women's Day",
+      "description": "October 20. An observance, not automatically a day off."
+    },
+    "teachersDay": {
+      "name": "Vietnamese Teachers' Day",
+      "description": "November 20, an occasion to thank teachers."
+    },
+    "christmas": {
+      "name": "Christmas Day",
+      "description": "December 25. Not automatically a day off in Vietnam."
+    }
+  }
+}

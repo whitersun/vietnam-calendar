@@ -1,0 +1,160 @@
+{
+  "brand": {
+    "name": "Lịch Việt",
+    "tagline": "越南公历、农历与节日"
+  },
+  "page": {
+    "eyebrow": "为重要的事，留一点时间",
+    "title": "让每一天，一目了然。",
+    "description": "查询越南公历、农历和节日，轻松安排生活中的重要时刻。",
+    "seoDescription": "越南公历与农历日历、节日信息及休假计算工具，支持越南语、英语、繁体中文和简体中文。"
+  },
+  "nav": {
+    "calendar": "日历",
+    "planner": "休假计算",
+    "language": "语言",
+    "skip": "跳至主要内容"
+  },
+  "theme": {
+    "label": "外观",
+    "light": "浅色",
+    "dark": "深色",
+    "system": "跟随系统"
+  },
+  "actions": {
+    "today": "今天",
+    "previous": "上一个",
+    "next": "下一个",
+    "selectMonth": "选择月份",
+    "selectYear": "选择年份",
+    "share": "分享",
+    "print": "打印",
+    "copied": "链接已复制",
+    "shareError": "无法复制链接，请从地址栏手动复制。",
+    "close": "关闭",
+    "reset": "重置"
+  },
+  "calendar": {
+    "monthView": "月历",
+    "yearView": "年历",
+    "showLunar": "显示农历",
+    "lunar": "农历",
+    "holiday": "节日",
+    "traditional": "传统节日",
+    "observance": "纪念日",
+    "weekend": "周末",
+    "todayLabel": "今天",
+    "hint": "选择日期，查看详细信息",
+    "keyboardHint": "使用方向键选择日期",
+    "yearCaption": "一整年的安排，尽收眼底",
+    "timezone": "越南历法 · UTC+7",
+    "range": "支持 2000–2099 年",
+    "dateLabel": "{date}。农历 {lunar}。{events}",
+    "openMonth": "查看{month}"
+  },
+  "detail": {
+    "title": "所选日期",
+    "lunarDate": "{year}年{month}月{day}日",
+    "leap": "闰月",
+    "newMoon": "初一",
+    "fullMoon": "十五",
+    "events": "这一天的节日",
+    "noEvents": "目前未列出这一天的节日或纪念日。",
+    "source": "查看来源",
+    "today": "就是今天",
+    "future": "还有 {count} 天",
+    "past": "{count} 天前",
+    "lunarNote": "切换语言后，农历仍按越南时间计算。"
+  },
+  "upcoming": {
+    "title": "即将到来的节日",
+    "description": "从当前查看的月份起算",
+    "empty": "日历范围内暂无接下来的节日。"
+  },
+  "planner": {
+    "title": "为自己安排一段休息",
+    "description": "选择日期区间，计算需要请几天假。",
+    "start": "开始日期",
+    "end": "结束日期",
+    "weekend": "每周固定休息日",
+    "satSun": "周六、周日",
+    "sun": "周日",
+    "days": "区间总天数",
+    "weekendDays": "固定休息日",
+    "leaveDays": "需要请假天数",
+    "excluded": "自行勾选排除的节日",
+    "markHolidays": "扣除已标记的节日",
+    "note": "按您的选择估算，不会自动计入完整春节假期、补假或调休工作日。请以工作单位通知为准。",
+    "invalid": "请选择 2000–2099 年内的日期，结束日期不得早于开始日期。",
+    "limit": "每次最多计算 366 天。",
+    "open": "计算休假天数",
+    "close": "收起"
+  },
+  "footer": {
+    "note": "节日标记尚未包含各年度完整假期、补假及调休工作日。",
+    "privacy": "免费使用，无需登录。",
+    "madeFor": "让生活中的每一天，都清晰可见。"
+  },
+  "holidays": {
+    "newYear": {
+      "name": "元旦",
+      "description": "公历新年的第一天。"
+    },
+    "tet": {
+      "name": "越南春节",
+      "description": "农历正月初一。完整春节假期由各年度及工作单位另行公布。"
+    },
+    "firstFullMoon": {
+      "name": "元宵节",
+      "description": "农历正月十五，越南称为 Tết Nguyên tiêu。"
+    },
+    "hungKings": {
+      "name": "雄王祭祖日",
+      "description": "农历三月初十，纪念越南雄王。"
+    },
+    "reunification": {
+      "name": "越南统一日",
+      "description": "公历 4 月 30 日。"
+    },
+    "labour": {
+      "name": "国际劳动节",
+      "description": "公历 5 月 1 日。"
+    },
+    "doanNgo": {
+      "name": "越南端午节",
+      "description": "农历五月初五，越南的传统节日。"
+    },
+    "vuLan": {
+      "name": "盂兰节",
+      "description": "农历七月十五，是感念父母恩情的日子。"
+    },
+    "nationalDay": {
+      "name": "越南国庆日",
+      "description": "公历 9 月 2 日。相邻休假日及调休安排以年度通知为准。"
+    },
+    "midAutumn": {
+      "name": "越南中秋节",
+      "description": "农历八月十五，家人团聚、孩子同乐的节日。"
+    },
+    "kitchenGods": {
+      "name": "送灶神日",
+      "description": "农历十二月二十三，为迎接新年做准备。"
+    },
+    "womensDay": {
+      "name": "国际妇女节",
+      "description": "公历 3 月 8 日。属于纪念日，不代表当天放假。"
+    },
+    "vietnameseWomensDay": {
+      "name": "越南妇女节",
+      "description": "公历 10 月 20 日。属于纪念日，不代表当天放假。"
+    },
+    "teachersDay": {
+      "name": "越南教师节",
+      "description": "公历 11 月 20 日，向老师表达感谢的日子。"
+    },
+    "christmas": {
+      "name": "圣诞节",
+      "description": "公历 12 月 25 日，在越南不代表当天放假。"
+    }
+  }
+}
