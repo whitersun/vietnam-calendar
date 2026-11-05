@@ -67,28 +67,28 @@
 /* Keep printed calendars on the light palette, regardless of the saved theme. */
 @media screen {
   .dark {
-    --background: #121915;
-    --foreground: #e4eae4;
-    --card: #1a241e;
-    --primary: #9dc6a9;
-    --primary-foreground: #13271b;
-    --secondary: #24362a;
-    --secondary-foreground: #c1dbc7;
-    --muted: #202b24;
-    --muted-foreground: #a2afa3;
-    --accent: #293d2f;
-    --accent-foreground: #d7e8d9;
+    --background: #090a11;
+    --foreground: #eaedf7;
+    --card: #11141e;
+    --primary: #a9bbff;
+    --primary-foreground: #141b35;
+    --secondary: #1b2235;
+    --secondary-foreground: #d6defb;
+    --muted: #181c29;
+    --muted-foreground: #a6afc3;
+    --accent: #252d45;
+    --accent-foreground: #e0e6ff;
     --destructive: #ef9c90;
-    --calendar-off: #3b2323;
-    --calendar-off-hover: #4b2a2a;
+    --calendar-off: #382129;
+    --calendar-off-hover: #4a2a33;
     --calendar-off-foreground: #ef9c90;
-    --calendar-occasion: #3b321b;
-    --calendar-occasion-hover: #4c4020;
+    --calendar-occasion: #362c18;
+    --calendar-occasion-hover: #4a3b1e;
     --calendar-occasion-foreground: #facc15;
-    --border: #344237;
-    --input: #3c4c40;
-    --ring: #91b69b;
-    --selection: #385840;
+    --border: #2d3447;
+    --input: #56627f;
+    --ring: #91a8f5;
+    --selection: #344875;
     color-scheme: dark;
   }
 }

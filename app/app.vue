@@ -4,7 +4,7 @@ const colorMode = useColorMode()
 useHead(() => ({
     meta: [{
         name: 'theme-color',
-        content: colorMode.value === 'dark' ? '#121915' : '#faf9f6',
+        content: colorMode.value === 'dark' ? '#090a11' : '#faf9f6',
     }],
 }))
 </script>
