@@ -43,6 +43,8 @@
     "traditional": "Traditional",
     "observance": "Observance",
     "weekend": "Weekend",
+    "dayOff": "Days off (weekends, holidays)",
+    "occasion": "Occasions without time off",
     "todayLabel": "Today",
     "hint": "Choose a day to see more",
     "keyboardHint": "Use the arrow keys to choose a day",

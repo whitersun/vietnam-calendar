@@ -43,6 +43,8 @@
     "traditional": "传统节日",
     "observance": "纪念日",
     "weekend": "周末",
+    "dayOff": "休息日（周末、法定节假日）",
+    "occasion": "不放假的节日、纪念日",
     "todayLabel": "今天",
     "hint": "选择日期，查看详细信息",
     "keyboardHint": "使用方向键选择日期",

@@ -43,6 +43,8 @@
     "traditional": "傳統節慶",
     "observance": "紀念日",
     "weekend": "週末",
+    "dayOff": "休息日（週末、國定假日）",
+    "occasion": "不放假的節慶、紀念日",
     "todayLabel": "今天",
     "hint": "選擇日期，查看詳細資訊",
     "keyboardHint": "使用方向鍵選擇日期",

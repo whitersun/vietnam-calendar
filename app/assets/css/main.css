@@ -20,6 +20,12 @@
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
   --color-destructive: var(--destructive);
+  --color-calendar-off: var(--calendar-off);
+  --color-calendar-off-hover: var(--calendar-off-hover);
+  --color-calendar-off-foreground: var(--calendar-off-foreground);
+  --color-calendar-occasion: var(--calendar-occasion);
+  --color-calendar-occasion-hover: var(--calendar-occasion-hover);
+  --color-calendar-occasion-foreground: var(--calendar-occasion-foreground);
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
@@ -42,6 +48,12 @@
   --accent: #edf2ed;
   --accent-foreground: #244a3d;
   --destructive: #b34d43;
+  --calendar-off: #fef2f2;
+  --calendar-off-hover: #fee2e2;
+  --calendar-off-foreground: #a33d33;
+  --calendar-occasion: #fef9c3;
+  --calendar-occasion-hover: #fef08a;
+  --calendar-occasion-foreground: #854d0e;
   --border: #e5e6df;
   --input: #e0e3da;
   --ring: #52765f;
@@ -67,6 +79,12 @@
     --accent: #293d2f;
     --accent-foreground: #d7e8d9;
     --destructive: #ef9c90;
+    --calendar-off: #3b2323;
+    --calendar-off-hover: #4b2a2a;
+    --calendar-off-foreground: #ef9c90;
+    --calendar-occasion: #3b321b;
+    --calendar-occasion-hover: #4c4020;
+    --calendar-occasion-foreground: #facc15;
     --border: #344237;
     --input: #3c4c40;
     --ring: #91b69b;

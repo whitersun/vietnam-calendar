@@ -1,160 +1,162 @@
 {
-  "brand": {
-    "name": "Lịch Việt",
-    "tagline": "Âm dương & ngày lễ Việt Nam"
-  },
-  "page": {
-    "eyebrow": "Một nhịp sống, nhiều kế hoạch",
-    "title": "Ngày tháng, thật rõ ràng.",
-    "description": "Xem ngày âm dương, ghi nhớ ngày lễ và dành thời gian cho những điều quan trọng.",
-    "seoDescription": "Lịch âm dương Việt Nam, ngày lễ và công cụ tính ngày nghỉ. Hỗ trợ tiếng Việt, tiếng Anh, Trung phồn thể và giản thể."
-  },
-  "nav": {
-    "calendar": "Xem lịch",
-    "planner": "Tính ngày nghỉ",
-    "language": "Ngôn ngữ",
-    "skip": "Đến nội dung chính"
-  },
-  "theme": {
-    "label": "Giao diện",
-    "light": "Sáng",
-    "dark": "Tối",
-    "system": "Theo hệ thống"
-  },
-  "actions": {
-    "today": "Hôm nay",
-    "previous": "Trước",
-    "next": "Sau",
-    "selectMonth": "Chọn tháng",
-    "selectYear": "Chọn năm",
-    "share": "Chia sẻ",
-    "print": "In lịch",
-    "copied": "Đã sao chép đường dẫn",
-    "shareError": "Chưa sao chép được. Bạn có thể sao chép đường dẫn trên thanh địa chỉ.",
-    "close": "Đóng",
-    "reset": "Đặt lại"
-  },
-  "calendar": {
-    "monthView": "Tháng",
-    "yearView": "Năm",
-    "showLunar": "Hiện âm lịch",
-    "lunar": "Âm lịch",
-    "holiday": "Ngày lễ",
-    "traditional": "Truyền thống",
-    "observance": "Kỷ niệm",
-    "weekend": "Cuối tuần",
-    "todayLabel": "Hôm nay",
-    "hint": "Chọn một ngày để xem chi tiết",
-    "keyboardHint": "Dùng phím mũi tên để chọn ngày",
-    "yearCaption": "Cả năm trong một góc nhìn",
-    "timezone": "Lịch Việt Nam · UTC+7",
-    "range": "Hỗ trợ năm 2000–2099",
-    "dateLabel": "{date}. Âm lịch {lunar}. {events}",
-    "openMonth": "Xem {month}"
-  },
-  "detail": {
-    "title": "Ngày đang chọn",
-    "lunarDate": "Ngày {day} tháng {month}, năm {year}",
-    "leap": "Tháng nhuận",
-    "newMoon": "Mùng một",
-    "fullMoon": "Ngày rằm",
-    "events": "Trong ngày này",
-    "noEvents": "Chưa có ngày lễ hay dịp kỷ niệm trong danh sách.",
-    "source": "Xem nguồn",
-    "today": "Chính là hôm nay",
-    "future": "Còn {count} ngày",
-    "past": "{count} ngày trước",
-    "lunarNote": "Âm lịch theo giờ Việt Nam ở mọi ngôn ngữ."
-  },
-  "upcoming": {
-    "title": "Những dịp sắp tới",
-    "description": "Tính từ tháng bạn đang xem",
-    "empty": "Chưa có dịp sắp tới trong phạm vi lịch."
-  },
-  "planner": {
-    "title": "Dành một khoảng nghỉ",
-    "description": "Chọn một khoảng ngày để tính ngày phép cần dùng.",
-    "start": "Từ ngày",
-    "end": "Đến ngày",
-    "weekend": "Ngày nghỉ hằng tuần",
-    "satSun": "Thứ Bảy & Chủ nhật",
-    "sun": "Chủ nhật",
-    "days": "Ngày trong khoảng",
-    "weekendDays": "Ngày nghỉ tuần",
-    "leaveDays": "Ngày phép cần dùng",
-    "excluded": "Ngày lễ tự đánh dấu nghỉ",
-    "markHolidays": "Trừ các ngày lễ đã đánh dấu",
-    "note": "Phép tính theo lựa chọn của bạn, chưa tự trừ lịch nghỉ Tết, nghỉ bù hay hoán đổi. Hãy đối chiếu lịch nơi làm việc.",
-    "invalid": "Chọn ngày kết thúc bằng hoặc sau ngày bắt đầu, trong năm 2000–2099.",
-    "limit": "Mỗi lần tính tối đa 366 ngày.",
-    "open": "Tính thử ngày nghỉ",
-    "close": "Thu gọn"
-  },
-  "footer": {
-    "note": "Ngày lễ trên lịch chưa bao gồm toàn bộ đợt nghỉ, nghỉ bù và hoán đổi hằng năm.",
-    "privacy": "Dùng miễn phí, không cần đăng nhập.",
-    "madeFor": "Một khoảng nhìn cho ngày tháng."
-  },
-  "holidays": {
-    "newYear": {
-      "name": "Tết Dương lịch",
-      "description": "Ngày đầu tiên của năm dương lịch."
+    "brand": {
+        "name": "Lịch Việt",
+        "tagline": "Âm dương & ngày lễ Việt Nam"
     },
-    "tet": {
-      "name": "Tết Nguyên đán",
-      "description": "Mùng một tháng Giêng. Lịch nghỉ Tết đầy đủ được công bố riêng theo từng năm và nơi làm việc."
+    "page": {
+        "eyebrow": "Một nhịp sống, nhiều kế hoạch",
+        "title": "Ngày tháng, thật rõ ràng.",
+        "description": "Xem ngày âm dương, ghi nhớ ngày lễ và dành thời gian cho những điều quan trọng.",
+        "seoDescription": "Lịch âm dương Việt Nam, ngày lễ và công cụ tính ngày nghỉ. Hỗ trợ tiếng Việt, tiếng Anh, Trung phồn thể và giản thể."
     },
-    "firstFullMoon": {
-      "name": "Rằm tháng Giêng",
-      "description": "Ngày rằm đầu tiên của năm âm lịch, còn gọi là Tết Nguyên tiêu."
+    "nav": {
+        "calendar": "Xem lịch",
+        "planner": "Tính ngày nghỉ",
+        "language": "Ngôn ngữ",
+        "skip": "Đến nội dung chính"
     },
-    "hungKings": {
-      "name": "Giỗ Tổ Hùng Vương",
-      "description": "Ngày 10 tháng 3 âm lịch, tưởng nhớ các Vua Hùng."
+    "theme": {
+        "label": "Giao diện",
+        "light": "Sáng",
+        "dark": "Tối",
+        "system": "Theo hệ thống"
     },
-    "reunification": {
-      "name": "Ngày Thống nhất",
-      "description": "Ngày 30 tháng 4."
+    "actions": {
+        "today": "Hôm nay",
+        "previous": "Trước",
+        "next": "Sau",
+        "selectMonth": "Chọn tháng",
+        "selectYear": "Chọn năm",
+        "share": "Chia sẻ",
+        "print": "In lịch",
+        "copied": "Đã sao chép đường dẫn",
+        "shareError": "Chưa sao chép được. Bạn có thể sao chép đường dẫn trên thanh địa chỉ.",
+        "close": "Đóng",
+        "reset": "Đặt lại"
     },
-    "labour": {
-      "name": "Quốc tế Lao động",
-      "description": "Ngày 1 tháng 5."
+    "calendar": {
+        "monthView": "Tháng",
+        "yearView": "Năm",
+        "showLunar": "Hiện âm lịch",
+        "lunar": "Âm lịch",
+        "holiday": "Ngày lễ",
+        "traditional": "Truyền thống",
+        "observance": "Kỷ niệm",
+        "weekend": "Cuối tuần",
+        "dayOff": "Ngày nghỉ (cuối tuần, lễ)",
+        "occasion": "Lễ, kỷ niệm không nghỉ",
+        "todayLabel": "Hôm nay",
+        "hint": "Chọn một ngày để xem chi tiết",
+        "keyboardHint": "Dùng phím mũi tên để chọn ngày",
+        "yearCaption": "Cả năm trong một góc nhìn",
+        "timezone": "Lịch Việt Nam · UTC+7",
+        "range": "Hỗ trợ năm 2000–2099",
+        "dateLabel": "{date}. Âm lịch {lunar}. {events}",
+        "openMonth": "Xem {month}"
     },
-    "doanNgo": {
-      "name": "Tết Đoan Ngọ",
-      "description": "Ngày 5 tháng 5 âm lịch, một dịp lễ truyền thống của Việt Nam."
+    "detail": {
+        "title": "Ngày đang chọn",
+        "lunarDate": "Ngày {day} tháng {month}, năm {year}",
+        "leap": "Tháng nhuận",
+        "newMoon": "Mùng một",
+        "fullMoon": "Ngày rằm",
+        "events": "Trong ngày này",
+        "noEvents": "Chưa có ngày lễ hay dịp kỷ niệm trong danh sách.",
+        "source": "Xem nguồn",
+        "today": "Chính là hôm nay",
+        "future": "Còn {count} ngày",
+        "past": "{count} ngày trước",
+        "lunarNote": "Âm lịch theo giờ Việt Nam ở mọi ngôn ngữ."
     },
-    "vuLan": {
-      "name": "Lễ Vu Lan",
-      "description": "Rằm tháng 7 âm lịch, dịp tưởng nhớ và báo hiếu cha mẹ."
+    "upcoming": {
+        "title": "Những dịp sắp tới",
+        "description": "Tính từ tháng bạn đang xem",
+        "empty": "Chưa có dịp sắp tới trong phạm vi lịch."
     },
-    "nationalDay": {
-      "name": "Quốc khánh Việt Nam",
-      "description": "Ngày 2 tháng 9. Ngày nghỉ liền kề và lịch hoán đổi cần theo thông báo hằng năm."
+    "planner": {
+        "title": "Dành một khoảng nghỉ",
+        "description": "Chọn một khoảng ngày để tính ngày phép cần dùng.",
+        "start": "Từ ngày",
+        "end": "Đến ngày",
+        "weekend": "Ngày nghỉ hằng tuần",
+        "satSun": "Thứ Bảy & Chủ nhật",
+        "sun": "Chủ nhật",
+        "days": "Ngày trong khoảng",
+        "weekendDays": "Ngày nghỉ tuần",
+        "leaveDays": "Ngày phép cần dùng",
+        "excluded": "Ngày lễ tự đánh dấu nghỉ",
+        "markHolidays": "Trừ các ngày lễ đã đánh dấu",
+        "note": "Phép tính theo lựa chọn của bạn, chưa tự trừ lịch nghỉ Tết, nghỉ bù hay hoán đổi. Hãy đối chiếu lịch nơi làm việc.",
+        "invalid": "Chọn ngày kết thúc bằng hoặc sau ngày bắt đầu, trong năm 2000–2099.",
+        "limit": "Mỗi lần tính tối đa 366 ngày.",
+        "open": "Tính thử ngày nghỉ",
+        "close": "Thu gọn"
     },
-    "midAutumn": {
-      "name": "Tết Trung thu",
-      "description": "Rằm tháng 8 âm lịch, dịp sum họp gia đình và vui chơi của trẻ em."
+    "footer": {
+        "note": "Ngày lễ trên lịch chưa bao gồm toàn bộ đợt nghỉ, nghỉ bù và hoán đổi hằng năm.",
+        "privacy": "Dùng miễn phí, không cần đăng nhập.",
+        "madeFor": "Một khoảng nhìn cho ngày tháng."
     },
-    "kitchenGods": {
-      "name": "Ông Công, Ông Táo",
-      "description": "Ngày 23 tháng Chạp âm lịch, dịp chuẩn bị đón năm mới."
-    },
-    "womensDay": {
-      "name": "Quốc tế Phụ nữ",
-      "description": "Ngày 8 tháng 3. Ngày kỷ niệm, không tự động là ngày nghỉ."
-    },
-    "vietnameseWomensDay": {
-      "name": "Phụ nữ Việt Nam",
-      "description": "Ngày 20 tháng 10. Ngày kỷ niệm, không tự động là ngày nghỉ."
-    },
-    "teachersDay": {
-      "name": "Nhà giáo Việt Nam",
-      "description": "Ngày 20 tháng 11, dịp tri ân thầy cô."
-    },
-    "christmas": {
-      "name": "Giáng sinh",
-      "description": "Ngày 25 tháng 12. Không tự động là ngày nghỉ tại Việt Nam."
+    "holidays": {
+        "newYear": {
+            "name": "Tết Dương lịch",
+            "description": "Ngày đầu tiên của năm dương lịch."
+        },
+        "tet": {
+            "name": "Tết Nguyên đán",
+            "description": "Mùng một tháng Giêng. Lịch nghỉ Tết đầy đủ được công bố riêng theo từng năm và nơi làm việc."
+        },
+        "firstFullMoon": {
+            "name": "Rằm tháng Giêng",
+            "description": "Ngày rằm đầu tiên của năm âm lịch, còn gọi là Tết Nguyên tiêu."
+        },
+        "hungKings": {
+            "name": "Giỗ Tổ Hùng Vương",
+            "description": "Ngày 10 tháng 3 âm lịch, tưởng nhớ các Vua Hùng."
+        },
+        "reunification": {
+            "name": "Ngày Thống nhất",
+            "description": "Ngày 30 tháng 4."
+        },
+        "labour": {
+            "name": "Quốc tế Lao động",
+            "description": "Ngày 1 tháng 5."
+        },
+        "doanNgo": {
+            "name": "Tết Đoan Ngọ",
+            "description": "Ngày 5 tháng 5 âm lịch, một dịp lễ truyền thống của Việt Nam."
+        },
+        "vuLan": {
+            "name": "Lễ Vu Lan",
+            "description": "Rằm tháng 7 âm lịch, dịp tưởng nhớ và báo hiếu cha mẹ."
+        },
+        "nationalDay": {
+            "name": "Quốc khánh Việt Nam",
+            "description": "Ngày 2 tháng 9. Ngày nghỉ liền kề và lịch hoán đổi cần theo thông báo hằng năm."
+        },
+        "midAutumn": {
+            "name": "Tết Trung thu",
+            "description": "Rằm tháng 8 âm lịch, dịp sum họp gia đình và vui chơi của trẻ em."
+        },
+        "kitchenGods": {
+            "name": "Ông Công, Ông Táo",
+            "description": "Ngày 23 tháng Chạp âm lịch, dịp chuẩn bị đón năm mới."
+        },
+        "womensDay": {
+            "name": "Quốc tế Phụ nữ",
+            "description": "Ngày 8 tháng 3. Ngày kỷ niệm, không tự động là ngày nghỉ."
+        },
+        "vietnameseWomensDay": {
+            "name": "Phụ nữ Việt Nam",
+            "description": "Ngày 20 tháng 10. Ngày kỷ niệm, không tự động là ngày nghỉ."
+        },
+        "teachersDay": {
+            "name": "Nhà giáo Việt Nam",
+            "description": "Ngày 20 tháng 11, dịp tri ân thầy cô."
+        },
+        "christmas": {
+            "name": "Giáng sinh",
+            "description": "Ngày 25 tháng 12. Không tự động là ngày nghỉ tại Việt Nam."
+        }
     }
-  }
 }

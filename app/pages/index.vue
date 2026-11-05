@@ -129,8 +129,8 @@ async function openPlanner() {
 
           <div class="flex flex-wrap items-center justify-between gap-4 border-t bg-card px-4 py-4 sm:px-6">
             <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-[10px] text-muted-foreground sm:text-[11px]">
-              <span class="flex items-center gap-1.5"><span class="size-1.5 rounded-full bg-destructive" />{{ t('calendar.holiday') }}</span>
-              <span class="flex items-center gap-1.5"><span class="size-1.5 rounded-full bg-amber-500" />{{ t('calendar.traditional') }} / {{ t('calendar.observance') }}</span>
+              <span class="flex items-center gap-1.5"><span class="size-3 rounded-sm border border-destructive/40 bg-calendar-off" aria-hidden="true" />{{ t('calendar.dayOff') }}</span>
+              <span class="flex items-center gap-1.5"><span class="size-3 rounded-sm border border-calendar-occasion-foreground/40 bg-calendar-occasion" aria-hidden="true" />{{ t('calendar.occasion') }}</span>
               <span class="flex items-center gap-1.5"><span class="size-1.5 rounded-full bg-primary" />{{ t('calendar.todayLabel') }}</span>
             </div>
             <div v-if="view === 'month'" class="flex items-center gap-2 print:hidden"><label for="show-lunar" class="text-[11px] text-muted-foreground">{{ t('calendar.showLunar') }}</label><UiSwitch id="show-lunar" :model-value="showLunar" @update:model-value="setLunar" /></div>
