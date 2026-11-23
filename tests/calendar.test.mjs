@@ -62,6 +62,19 @@ test('holiday dates are distinct from annual substitute-day schedules', () => {
   assert.ok(!events.some(event => event.date === '2026-04-27'))
 })
 
+test('Vietnam Culture Day is a paid holiday starting in 2026', () => {
+  const id = 'vietnamCultureDay'
+  assert.ok(!getYearEvents(2025).some(event => event.id === id))
+  for (const year of [2026, 2027]) {
+    assert.deepEqual(getYearEvents(year).filter(event => event.id === id), [{
+      id,
+      date: `${year}-11-24`,
+      kind: 'holiday',
+      source: 'https://vanban.chinhphu.vn/?docid=218008&pageid=27160',
+    }])
+  }
+})
+
 test('changing display locale cannot change underlying solar/lunar dates', () => {
   const before = getLunarDate('2030-02-02')
   for (const locale of ['vi', 'en', 'zh-TW', 'zh-CN']) {

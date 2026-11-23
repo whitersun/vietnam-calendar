@@ -154,6 +154,10 @@
             "name": "Nhà giáo Việt Nam",
             "description": "Ngày 20 tháng 11, dịp tri ân thầy cô."
         },
+        "vietnamCultureDay": {
+            "name": "Ngày Văn hóa Việt Nam",
+            "description": "Ngày 24 tháng 11 hằng năm. Từ năm 2026, người lao động được nghỉ một ngày và hưởng nguyên lương."
+        },
         "christmas": {
             "name": "Giáng sinh",
             "description": "Ngày 25 tháng 12. Không tự động là ngày nghỉ tại Việt Nam."

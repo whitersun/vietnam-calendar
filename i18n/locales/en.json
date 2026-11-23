@@ -154,6 +154,10 @@
       "name": "Vietnamese Teachers' Day",
       "description": "November 20, an occasion to thank teachers."
     },
+    "vietnamCultureDay": {
+      "name": "Vietnam Culture Day",
+      "description": "November 24. Since 2026, workers have been entitled to one day off with full pay."
+    },
     "christmas": {
       "name": "Christmas Day",
       "description": "December 25. Not automatically a day off in Vietnam."

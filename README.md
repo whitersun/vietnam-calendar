@@ -57,7 +57,7 @@ The type check requires generated Nuxt types from installation or the dev server
 
 Lunar calculations use the MIT-licensed [date-chinese](https://github.com/commenthol/date-chinese) library's Vietnamese calendar, which applies UTC+7 for the supported modern years. Tests include leap months, Vietnamese new year boundaries and the Vietnam/China difference in 2030. These checks do not establish historical or astronomical accuracy for every date.
 
-The occasions list is a starter dataset, not an exhaustive official holiday schedule. Holiday entries link to the [2019 Labour Code](https://vanban.chinhphu.vn/?pageid=27160&docid=198540). Full Tết breaks, adjoining National Day leave, compensatory days and swapped workdays require separately sourced annual announcements; they are not automatically inferred or subtracted. Employers' schedules can differ. The leave calculator excludes marked holiday dates only when the user enables that option.
+The occasions list is a starter dataset, not an exhaustive official holiday schedule. Holiday entries link to the [2019 Labour Code](https://vanban.chinhphu.vn/?pageid=27160&docid=198540) or, for Vietnam Culture Day from 2026 onward, [Resolution 28/2026/QH16](https://vanban.chinhphu.vn/?docid=218008&pageid=27160). Full Tết breaks, adjoining National Day leave, compensatory days and swapped workdays require separately sourced annual announcements; they are not automatically inferred or subtracted. Employers' schedules can differ. The leave calculator excludes marked holiday dates only when the user enables that option.
 
 ## Translation and privacy
 

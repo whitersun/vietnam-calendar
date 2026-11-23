@@ -154,6 +154,10 @@
       "name": "越南教師節",
       "description": "國曆 11 月 20 日，向老師表達感謝的日子。"
     },
+    "vietnamCultureDay": {
+      "name": "越南文化日",
+      "description": "每年 11 月 24 日。自 2026 年起，勞工享有一天全薪假期。"
+    },
     "christmas": {
       "name": "聖誕節",
       "description": "國曆 12 月 25 日，在越南不代表當日放假。"
