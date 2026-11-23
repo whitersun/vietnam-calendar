@@ -42,9 +42,11 @@
     "holiday": "节日",
     "traditional": "传统节日",
     "observance": "纪念日",
+    "publicSectorDayOff": "公共部门休假",
+    "publicSectorWorkday": "公共部门补班",
     "weekend": "周末",
     "dayOff": "休息日（周末、法定节假日）",
-    "occasion": "不放假的节日、纪念日",
+    "occasion": "节日及特别安排",
     "todayLabel": "今天",
     "hint": "选择日期，查看详细信息",
     "keyboardHint": "使用方向键选择日期",
@@ -86,14 +88,14 @@
     "leaveDays": "需要请假天数",
     "excluded": "自行勾选排除的节日",
     "markHolidays": "扣除已标记的节日",
-    "note": "按您的选择估算，不会自动计入完整春节假期、补假或调休工作日。请以工作单位通知为准。",
+    "note": "启用节假日选项时，仅扣除全国适用的节假日。休假和补班安排请以工作单位通知为准。",
     "invalid": "请选择 2000–2099 年内的日期，结束日期不得早于开始日期。",
     "limit": "每次最多计算 366 天。",
     "open": "计算休假天数",
     "close": "收起"
   },
   "footer": {
-    "note": "节日标记尚未包含各年度完整假期、补假及调休工作日。",
+    "note": "已公布的公共部门休假和补班日期会在日历上标注。",
     "privacy": "免费使用，无需登录。",
     "madeFor": "让生活中的每一天，都清晰可见。"
   },
@@ -157,6 +159,10 @@
     "vietnamCultureDay": {
       "name": "越南文化日",
       "description": "每年 11 月 24 日。自 2026 年起，劳动者享有一天全薪假期。"
+    },
+    "remembranceDay": {
+      "name": "越南伤残军人与烈士纪念日",
+      "description": "每年 7 月 27 日，缅怀为越南作出贡献和牺牲的人。自 2027 年起为带薪公共假日。"
     },
     "christmas": {
       "name": "圣诞节",

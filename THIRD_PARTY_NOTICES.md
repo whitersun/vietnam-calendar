@@ -29,3 +29,7 @@ SOFTWARE.
 
 
 Other dependencies retain their licenses in their respective packages.
+
+## Vietnam public-holiday data
+
+`app/data/public-holidays.json` is derived from commenthol's [date-holidays Vietnam data](https://github.com/commenthol/date-holidays/blob/master/data/countries/VN.yaml) and its sources, including [Public holidays in Vietnam](https://en.wikipedia.org/wiki/Public_holidays_in_Vietnam). The generated snapshot selects public holidays and expands their rules into dates. The snapshot is distributed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) following the [upstream data license](https://github.com/commenthol/date-holidays/blob/master/LICENSE).

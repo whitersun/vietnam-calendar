@@ -42,9 +42,11 @@
         "holiday": "Ngày lễ",
         "traditional": "Truyền thống",
         "observance": "Kỷ niệm",
+        "publicSectorDayOff": "Khu vực công nghỉ",
+        "publicSectorWorkday": "Khu vực công làm bù",
         "weekend": "Cuối tuần",
         "dayOff": "Ngày nghỉ (cuối tuần, lễ)",
-        "occasion": "Lễ, kỷ niệm không nghỉ",
+        "occasion": "Sự kiện và lịch riêng",
         "todayLabel": "Hôm nay",
         "hint": "Chọn một ngày để xem chi tiết",
         "keyboardHint": "Dùng phím mũi tên để chọn ngày",
@@ -86,14 +88,14 @@
         "leaveDays": "Ngày phép cần dùng",
         "excluded": "Ngày lễ tự đánh dấu nghỉ",
         "markHolidays": "Trừ các ngày lễ đã đánh dấu",
-        "note": "Phép tính theo lựa chọn của bạn, chưa tự trừ lịch nghỉ Tết, nghỉ bù hay hoán đổi. Hãy đối chiếu lịch nơi làm việc.",
+        "note": "Khi bật trừ ngày lễ, phép tính chỉ tính các ngày lễ chung. Hãy đối chiếu lịch nghỉ và làm bù tại nơi làm việc.",
         "invalid": "Chọn ngày kết thúc bằng hoặc sau ngày bắt đầu, trong năm 2000–2099.",
         "limit": "Mỗi lần tính tối đa 366 ngày.",
         "open": "Tính thử ngày nghỉ",
         "close": "Thu gọn"
     },
     "footer": {
-        "note": "Ngày lễ trên lịch chưa bao gồm toàn bộ đợt nghỉ, nghỉ bù và hoán đổi hằng năm.",
+        "note": "Lịch nghỉ và làm bù đã công bố cho khu vực công có nhãn riêng.",
         "privacy": "Dùng miễn phí, không cần đăng nhập.",
         "madeFor": "Một khoảng nhìn cho ngày tháng."
     },
@@ -157,6 +159,10 @@
         "vietnamCultureDay": {
             "name": "Ngày Văn hóa Việt Nam",
             "description": "Ngày 24 tháng 11 hằng năm. Từ năm 2026, người lao động được nghỉ một ngày và hưởng nguyên lương."
+        },
+        "remembranceDay": {
+            "name": "Ngày Tổ quốc tri ân",
+            "description": "Ngày Thương binh, liệt sĩ (27/7). Từ năm 2027, người lao động được nghỉ một ngày và hưởng nguyên lương."
         },
         "christmas": {
             "name": "Giáng sinh",

@@ -42,9 +42,11 @@
     "holiday": "Holiday",
     "traditional": "Traditional",
     "observance": "Observance",
+    "publicSectorDayOff": "Public-sector day off",
+    "publicSectorWorkday": "Public-sector make-up workday",
     "weekend": "Weekend",
     "dayOff": "Days off (weekends, holidays)",
-    "occasion": "Occasions without time off",
+    "occasion": "Occasions and special schedules",
     "todayLabel": "Today",
     "hint": "Choose a day to see more",
     "keyboardHint": "Use the arrow keys to choose a day",
@@ -86,14 +88,14 @@
     "leaveDays": "Leave days needed",
     "excluded": "Holidays marked as days off",
     "markHolidays": "Exclude marked holidays",
-    "note": "This estimate follows your choices. It does not automatically include the full Tết break, substitute holidays or swapped workdays. Check your workplace schedule.",
+    "note": "The holiday option counts nationwide holidays only. Check your workplace schedule for additional days off and make-up workdays.",
     "invalid": "Choose an end date on or after the start date, within 2000–2099.",
     "limit": "Calculate up to 366 days at a time.",
     "open": "Try the time-off calculator",
     "close": "Collapse"
   },
   "footer": {
-    "note": "Holiday dates do not include complete annual breaks, substitute holidays or swapped workdays.",
+    "note": "Published days off and make-up workdays for the public sector are labelled on the calendar.",
     "privacy": "Free to use. No sign-in needed.",
     "madeFor": "A little perspective on your days."
   },
@@ -157,6 +159,10 @@
     "vietnamCultureDay": {
       "name": "Vietnam Culture Day",
       "description": "November 24. Since 2026, workers have been entitled to one day off with full pay."
+    },
+    "remembranceDay": {
+      "name": "War Invalids and Martyrs Day",
+      "description": "July 27 honours those who served and sacrificed for Vietnam. It is a paid public holiday from 2027."
     },
     "christmas": {
       "name": "Christmas Day",

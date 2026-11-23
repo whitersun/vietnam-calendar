@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { ArrowUpRight, Moon, Sun } from '@lucide/vue'
+import { useCalendarEventText } from '~/composables/useCalendarEventText'
 import type { CalendarEvent } from '~/data/holidays'
 import { dayDistance, formatDate, getLunarDate } from '~/utils/calendar'
 
 const props = defineProps<{ selected: string; today: string; events: CalendarEvent[] }>()
 const { t, locale } = useI18n()
+const { eventLabel } = useCalendarEventText()
 const lunar = computed(() => getLunarDate(props.selected))
 const distance = computed(() => dayDistance(props.today, props.selected))
 const relative = computed(() => distance.value === 0 ? t('detail.today') : t(distance.value > 0 ? 'detail.future' : 'detail.past', { count: Math.abs(distance.value) }))
@@ -51,8 +53,9 @@ const relative = computed(() => distance.value === 0 ? t('detail.today') : t(dis
                     <p class="flex items-center gap-2 text-sm font-semibold"><span
                             class="size-1.5 shrink-0 rounded-full"
                             :class="event.kind === 'holiday' ? 'bg-destructive' : 'bg-amber-500'" />{{
-                                t(`holidays.${event.id}.name`) }}</p>
-                    <p class="mt-2 text-xs leading-6 text-muted-foreground">{{ t(`holidays.${event.id}.description`) }}
+                                eventLabel(event) }}</p>
+                    <p v-if="!event.names && event.kind !== 'publicSectorDayOff' && event.kind !== 'publicSectorWorkday'"
+                        class="mt-2 text-xs leading-6 text-muted-foreground">{{ t(`holidays.${event.id}.description`) }}
                     </p>
                     <a v-if="event.source" :href="event.source" target="_blank" rel="noopener noreferrer"
                         class="mt-2 inline-flex items-center gap-1 text-xs text-primary underline-offset-4 hover:underline">{{

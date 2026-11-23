@@ -1,0 +1,93 @@
+name: Update Vietnam holidays
+
+on:
+  schedule:
+    - cron: '23 1 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: update-vietnam-holidays
+
+permissions:
+  contents: read
+
+jobs:
+  public-holidays:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+    env:
+      DATA_BRANCH: codex/sync-vietnam-holidays
+      DATA_FILE: app/data/public-holidays.json
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          package-manager-cache: false
+      - name: Regenerate Vietnam public holidays
+        id: snapshot
+        run: |
+          npm install --prefix "$RUNNER_TEMP/holiday-source" --ignore-scripts --no-audit --no-fund date-holidays@latest
+          node scripts/sync-holidays.mjs "$RUNNER_TEMP/holiday-source/node_modules/date-holidays"
+          if ! git diff --quiet -- "$DATA_FILE"; then
+            echo "blob=$(git hash-object "$DATA_FILE")" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Open or update the holiday data PR
+        id: holiday-pr
+        if: github.ref_name == github.event.repository.default_branch
+        continue-on-error: true
+        uses: peter-evans/create-pull-request@v8
+        with:
+          add-paths: ${{ env.DATA_FILE }}
+          branch: ${{ env.DATA_BRANCH }}
+          delete-branch: true
+          commit-message: 'chore: refresh Vietnam public holidays'
+          title: Refresh Vietnam public holidays
+          body: |
+            This updates the Vietnamese public-holiday snapshot from date-holidays.
+            Review the dates against official sources before merging.
+      - name: Flag a data update when PR creation is unavailable
+        if: steps.holiday-pr.outcome == 'failure' && steps.snapshot.outputs.blob != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          HOLIDAY_BLOB: ${{ steps.snapshot.outputs.blob }}
+        run: |
+          remote_blob=$(gh api "repos/$GITHUB_REPOSITORY/contents/$DATA_FILE?ref=$DATA_BRANCH" --jq .sha)
+          if [[ "$remote_blob" != "$HOLIDAY_BLOB" ]]; then
+            echo 'The data branch does not contain the regenerated snapshot.' >&2
+            exit 1
+          fi
+          marker="holidaydata${HOLIDAY_BLOB}"
+          matches=$(gh issue list --state all --search "$marker in:body" --limit 1 --json number --jq length)
+          if [[ "$matches" == 0 ]]; then
+            comparison="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/compare/$GITHUB_REF_NAME...$DATA_BRANCH"
+            printf 'Dữ liệu ngày lễ có thay đổi. [Xem bản cập nhật và mở PR](%s).\n\n<!-- %s -->\n' "$comparison" "$marker" |
+              gh issue create --title 'Có cập nhật dữ liệu ngày lễ Việt Nam' --body-file -
+          fi
+
+  official-notices:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Flag new holiday announcements
+        run: |
+          if [[ "$GITHUB_REF_NAME" == "$DEFAULT_BRANCH" ]]; then
+            python3 scripts/watch-holiday-notices.py --publish
+          else
+            python3 scripts/watch-holiday-notices.py
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}

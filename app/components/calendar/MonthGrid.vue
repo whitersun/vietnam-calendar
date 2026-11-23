@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useCalendarEventText } from '~/composables/useCalendarEventText'
 import type { CalendarEvent } from '~/data/holidays'
 import { addDays, formatDate, monthDays, validDate, weekdayLabels } from '~/utils/calendar'
 
@@ -12,6 +13,7 @@ const props = withDefaults(defineProps<{
 }>(), { showLunar: true, compact: false })
 const emit = defineEmits<{ select: [date: string, openDetails: boolean]; openMonth: [month: string] }>()
 const { t, locale } = useI18n()
+const { eventLabel } = useCalendarEventText()
 const days = computed(() => monthDays(props.month).map(day => {
   const events = props.events.get(day.iso) || []
   return { ...day, events, dayOff: day.weekend || events.some(event => event.kind === 'holiday') }
@@ -34,9 +36,11 @@ function accessibleLabel(day: typeof days.value[number]) {
   const label = t('calendar.dateLabel', {
     date: formatDate(day.iso, locale.value, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }),
     lunar,
-    events: day.events.map(event => t(`holidays.${event.id}.name`)).join(', '),
+    events: day.events.map(eventLabel).join(', '),
   })
-  return day.dayOff ? `${label}. ${t('calendar.dayOff')}` : label
+  if (!day.dayOff) return label
+  const workday = day.events.some(event => event.kind === 'publicSectorWorkday')
+  return `${label}. ${t(workday ? 'calendar.weekend' : 'calendar.dayOff')}`
 }
 
 function onKeydown(event: KeyboardEvent, date: string) {
@@ -88,7 +92,7 @@ function onKeydown(event: KeyboardEvent, date: string) {
         </span>
         <span v-if="day.events.length" :class="compact ? 'absolute bottom-0.5 flex' : 'mt-auto flex w-full items-center gap-1.5'">
           <span class="size-1.5 shrink-0 rounded-full" :class="day.events.some(event => event.kind === 'holiday') ? 'bg-destructive' : 'bg-calendar-occasion-foreground'" />
-          <span v-if="!compact" class="hidden truncate text-[10px] leading-4 sm:block">{{ t(`holidays.${day.events[0]!.id}.name`) }}</span>
+          <span v-if="!compact" class="hidden truncate text-[10px] leading-4 sm:block">{{ eventLabel(day.events[0]!) }}</span>
         </span>
       </button>
     </div>

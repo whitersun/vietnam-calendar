@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import { ArrowUpRight } from '@lucide/vue'
+import { useCalendarEventText } from '~/composables/useCalendarEventText'
 import type { CalendarEvent } from '~/data/holidays'
 import { formatDate } from '~/utils/calendar'
 
 defineProps<{ events: CalendarEvent[] }>()
 const emit = defineEmits<{ select: [date: string] }>()
 const { t, locale } = useI18n()
+const { eventName } = useCalendarEventText()
 </script>
 
 <template>
@@ -22,7 +24,7 @@ const { t, locale } = useI18n()
           <span class="text-[9px] text-muted-foreground">{{ formatDate(event.date, locale, { month: 'short' }) }}</span>
         </span>
         <span class="min-w-0 flex-1">
-          <span class="block text-xs leading-5 font-medium group-hover:text-primary">{{ t(`holidays.${event.id}.name`) }}</span>
+          <span class="block text-xs leading-5 font-medium group-hover:text-primary">{{ eventName(event) }}</span>
           <span class="mt-0.5 block text-[10px] text-muted-foreground">{{ t(`calendar.${event.kind}`) }} · {{ event.date.slice(0, 4) }}</span>
         </span>
         <ArrowUpRight class="size-3.5 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true" />

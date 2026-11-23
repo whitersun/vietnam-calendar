@@ -59,7 +59,12 @@ test('holiday dates are distinct from annual substitute-day schedules', () => {
   assert.equal(events.find(event => event.id === 'hungKings').date, '2026-04-26')
   assert.equal(events.find(event => event.id === 'midAutumn').date, '2026-09-25')
   assert.equal(events.find(event => event.id === 'teachersDay').kind, 'observance')
-  assert.ok(!events.some(event => event.date === '2026-04-27'))
+  assert.deepEqual(events.filter(event => event.date === '2026-04-27').map(event => event.kind), ['publicSectorDayOff'])
+})
+
+test('imported lunar holiday rules use the same Vietnamese lunar date as the grid', () => {
+  const event = getYearEvents(2050).find(event => event.id === 'hungKings')
+  assert.deepEqual(getLunarDate(event.date), { day: 10, month: 3, year: 2050, leap: false })
 })
 
 test('Vietnam Culture Day is a paid holiday starting in 2026', () => {
@@ -73,6 +78,25 @@ test('Vietnam Culture Day is a paid holiday starting in 2026', () => {
       source: 'https://vanban.chinhphu.vn/?docid=218008&pageid=27160',
     }])
   }
+})
+
+test('an official announcement can add a holiday before it appears upstream', () => {
+  assert.ok(!getYearEvents(2026).some(event => event.id === 'remembranceDay'))
+  const events = getYearEvents(2027).filter(event => event.date === '2027-07-27')
+  assert.deepEqual(events.map(event => [event.id, event.kind]), [['remembranceDay', 'holiday']])
+})
+
+test('confirmed public-sector schedules display days off and make-up workdays without changing general holidays', () => {
+  const events2026 = getYearEvents(2026)
+  assert.ok(events2026.some(event => event.date === '2026-08-31' && event.kind === 'publicSectorDayOff'))
+  assert.ok(events2026.some(event => event.date === '2026-08-22' && event.kind === 'publicSectorWorkday'))
+
+  const events2027 = getYearEvents(2027)
+  assert.deepEqual(events2027.filter(event => event.date === '2027-09-02').map(event => event.kind), ['holiday'])
+  assert.deepEqual(events2027.filter(event => event.date === '2027-09-03').map(event => event.kind), ['publicSectorDayOff'])
+  assert.equal(events2027.filter(event => event.id === 'tet').length, 7)
+  assert.equal(events2027.filter(event => event.id === 'tet' && event.kind === 'holiday').length, 1)
+  assert.ok(!getYearEvents(2028).some(event => event.kind.startsWith('publicSector')))
 })
 
 test('changing display locale cannot change underlying solar/lunar dates', () => {

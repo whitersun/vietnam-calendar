@@ -28,7 +28,8 @@ export function useCalendar() {
   const upcoming = computed(() => [year.value, year.value + 1]
     .filter(value => value <= MAX_YEAR)
     .flatMap(getYearEvents)
-    .filter(event => event.date >= `${month.value}-01`)
+    .filter(event => event.date >= `${month.value}-01`
+      && event.kind !== 'publicSectorDayOff' && event.kind !== 'publicSectorWorkday')
     .slice(0, 4))
 
   function update(values: Record<string, string | undefined>) {

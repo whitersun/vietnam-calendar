@@ -40,7 +40,7 @@ The type check requires generated Nuxt types from installation or the dev server
 - `app/components/ui/`: shadcn Vue source components. Their imports use `@lucide/vue`, the successor to `lucide-vue-next`.
 - `app/composables/useCalendar.ts`: date/view state stored in URL query parameters.
 - `app/utils/calendar.ts`: date-only operations and `date-chinese`'s `CalendarVietnamese` adapter.
-- `app/data/holidays.ts`: selected fixed solar/lunar occasions; no inferred annual leave schedule.
+- `app/data/holidays.ts`: combines selected observances, public holidays, and confirmed public-sector schedules.
 - `app/assets/css/main.css`: shared Tailwind theme, base/accessibility rules and page-level print settings. Component-specific print styling uses Tailwind utilities in the owning components.
 - `i18n/locales/`: independently editable dictionaries, lazy-loaded by Nuxt i18n.
 - `docs/translations.md`: saved translation workflow and future AI translation boundaries.
@@ -57,7 +57,13 @@ The type check requires generated Nuxt types from installation or the dev server
 
 Lunar calculations use the MIT-licensed [date-chinese](https://github.com/commenthol/date-chinese) library's Vietnamese calendar, which applies UTC+7 for the supported modern years. Tests include leap months, Vietnamese new year boundaries and the Vietnam/China difference in 2030. These checks do not establish historical or astronomical accuracy for every date.
 
-The occasions list is a starter dataset, not an exhaustive official holiday schedule. Holiday entries link to the [2019 Labour Code](https://vanban.chinhphu.vn/?pageid=27160&docid=198540) or, for Vietnam Culture Day from 2026 onward, [Resolution 28/2026/QH16](https://vanban.chinhphu.vn/?docid=218008&pageid=27160). Full Tết breaks, adjoining National Day leave, compensatory days and swapped workdays require separately sourced annual announcements; they are not automatically inferred or subtracted. Employers' schedules can differ. The leave calculator excludes marked holiday dates only when the user enables that option.
+`app/data/public-holidays.json` contains Vietnamese public-holiday dates generated from [date-holidays](https://github.com/commenthol/date-holidays/blob/master/data/countries/VN.yaml). The app reads this snapshot locally. New holidays can use the source's Vietnamese and English names until translations are available. `app/data/public-holiday-notices.json` records nationwide holidays confirmed ahead of an upstream release, with their effective dates and sources. These records take precedence when the matching solar date arrives upstream.
+
+`app/data/public-sector-schedules.json` contains dated adjustments from published notices, starting with the 2026 and 2027 schedules. The calendar labels these separately. The optional holiday exclusion in the leave calculator applies to nationwide holidays. Employer schedules and future annual adjustments vary.
+
+The **Update Vietnam holidays** GitHub workflow runs daily and can also be dispatched manually. It opens or refreshes a data PR when the upstream holiday dates change. It also checks Government Gazette and Government News RSS feeds and opens an issue for each matching notice, including a link for review. Feed text can describe proposals or omit details, so confirm dates and who they apply to before updating the annual schedule JSON.
+
+If the repository enables **Allow GitHub Actions to create and approve pull requests**, the workflow opens its own PR. Otherwise it reports the updated branch in an issue with a comparison link. GitHub Issues must be enabled to receive these alerts. Neither job runs the Nuxt build.
 
 ## Translation and privacy
 

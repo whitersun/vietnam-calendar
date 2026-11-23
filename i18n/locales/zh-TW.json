@@ -42,9 +42,11 @@
     "holiday": "節日",
     "traditional": "傳統節慶",
     "observance": "紀念日",
+    "publicSectorDayOff": "公部門放假",
+    "publicSectorWorkday": "公部門補班",
     "weekend": "週末",
     "dayOff": "休息日（週末、國定假日）",
-    "occasion": "不放假的節慶、紀念日",
+    "occasion": "節慶及特別安排",
     "todayLabel": "今天",
     "hint": "選擇日期，查看詳細資訊",
     "keyboardHint": "使用方向鍵選擇日期",
@@ -86,14 +88,14 @@
     "leaveDays": "需要請假天數",
     "excluded": "自行勾選排除的節日",
     "markHolidays": "扣除已標示的節日",
-    "note": "依您的選擇試算，不會自動計入完整春節假期、補假或調整上班日。請以任職單位公告為準。",
+    "note": "啟用節假日選項時，僅扣除全國適用的節假日。放假與補班安排請以任職單位公告為準。",
     "invalid": "請選擇 2000–2099 年內的日期，結束日期不得早於開始日期。",
     "limit": "每次最多試算 366 天。",
     "open": "試算休假天數",
     "close": "收合"
   },
   "footer": {
-    "note": "節日標示尚未包含各年度完整假期、補假及調整上班日。",
+    "note": "已公布的公部門放假與補班日期會標示在日曆上。",
     "privacy": "免費使用，免登入。",
     "madeFor": "為生活的每一天，留一個清楚的視角。"
   },
@@ -157,6 +159,10 @@
     "vietnamCultureDay": {
       "name": "越南文化日",
       "description": "每年 11 月 24 日。自 2026 年起，勞工享有一天全薪假期。"
+    },
+    "remembranceDay": {
+      "name": "越南傷殘軍人與烈士紀念日",
+      "description": "每年 7 月 27 日，紀念為越南奉獻與犧牲的人。自 2027 年起為有薪國定假日。"
     },
     "christmas": {
       "name": "聖誕節",
