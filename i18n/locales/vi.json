@@ -212,10 +212,6 @@
       "name": "Tết Hạ Nguyên",
       "description": "Rằm tháng 10 âm lịch. Ở một số nơi, người dân dâng cúng cơm mới để tạ ơn sau mùa gặt."
     },
-    "japanCultureDay": {
-      "name": "Ngày Văn hóa Nhật Bản",
-      "description": "Ngày lễ 3 tháng 11 của Nhật Bản, còn gọi là Bunka no Hi, tôn vinh văn hóa, tự do và hòa bình."
-    },
     "vietnamLawDay": {
       "name": "Ngày Pháp luật Việt Nam",
       "description": "Ngày 9 tháng 11, dịp tôn vinh Hiến pháp và pháp luật, gắn với ngày thông qua Hiến pháp năm 1946."
@@ -231,10 +227,6 @@
     "vietnamRedCrossAnniversary": {
       "name": "Ngày thành lập Hội Chữ thập đỏ Việt Nam",
       "description": "Ngày 23 tháng 11 năm 1946, tổ chức tiền thân của Hội Chữ thập đỏ Việt Nam được thành lập."
-    },
-    "japanLaborThanksgiving": {
-      "name": "Ngày Cảm tạ Lao động (Nhật Bản)",
-      "description": "Ngày lễ 23 tháng 11 của Nhật Bản, còn gọi là Kinrō Kansha no Hi, ghi nhận công sức lao động."
     },
     "peoplesArmyDay": {
       "name": "Ngày thành lập Quân đội nhân dân Việt Nam",

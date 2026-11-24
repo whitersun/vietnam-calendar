@@ -25,7 +25,6 @@ type SolarEvent = Omit<CalendarEvent, 'date'> & { monthDay: string; since?: numb
 
 export const HOLIDAY_SOURCE = 'https://vanban.chinhphu.vn/?pageid=27160&docid=198540'
 const UPSTREAM_SOURCE = 'https://github.com/commenthol/date-holidays/blob/master/data/countries/VN.yaml'
-const JAPAN_HOLIDAY_SOURCE = 'https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html'
 const VIETNAM_ANNIVERSARY_SOURCE = 'https://vanban.chinhphu.vn/default.aspx?docid=170518&pageid=27160'
 const VIETNAM_TRADITIONS_SOURCE = 'https://baotanglichsu.vn/VI/Articles/3096/68456/tet-viet.html'
 const TRADITIONAL_FESTIVALS_SOURCE = 'https://ngheandost.gov.vn/tap-chi-chuyen-san/chuyen-san-khxh-nv/chuyen-san-khxh-nv-so-2-2021-71.html?download=1&id=1'
@@ -50,13 +49,11 @@ const solarEvents: SolarEvent[] = [
     { id: 'remembranceDay', monthDay: '07-27', kind: 'observance', source: 'https://baochinhphu.vn/luon-ghi-nho-tri-an-va-song-xung-dang-voi-nhung-nguoi-da-khuat-da-hy-sinh-vi-to-quoc-vi-nhan-dan-102240723111017936.htm' },
     { id: 'augustRevolution', monthDay: '08-19', kind: 'observance', source: VIETNAM_ANNIVERSARY_SOURCE },
     { id: 'vietnameseWomensDay', monthDay: '10-20', kind: 'observance' },
-    { id: 'japanCultureDay', monthDay: '11-03', kind: 'observance', source: JAPAN_HOLIDAY_SOURCE },
     { id: 'vietnamLawDay', monthDay: '11-09', kind: 'observance', since: 2013, source: 'https://baochinhphu.vn/de-cao-song-va-lam-viec-theo-hien-phap-102152389.htm' },
     { id: 'nationalUnityDay', monthDay: '11-18', kind: 'observance', source: 'https://m.mattran.org.vn/van-ban-huong-dan/ngay-1811-duoc-lay-lam-ngay-ky-niem-thanh-lap-mat-tran-dan-toc-thong-nhat-viet-nam-tu-khi-nao-10575.html' },
     { id: 'teachersDay', monthDay: '11-20', kind: 'observance' },
     { id: 'vietnamHeritageDay', monthDay: '11-23', kind: 'observance', since: 2005, source: 'https://luutru.gov.vn/cong-bo-gioi-thieu-tai-lieu/sac-lenh-so-65-sl-ngay-23-11-1945-tien-de-ngay-di-san-van-hoa-viet-nam.htm' },
     { id: 'vietnamRedCrossAnniversary', monthDay: '11-23', kind: 'observance', source: 'https://www.redcross.org.vn/gioi-thieu/lich-su' },
-    { id: 'japanLaborThanksgiving', monthDay: '11-23', kind: 'observance', source: JAPAN_HOLIDAY_SOURCE },
     { id: 'peoplesArmyDay', monthDay: '12-22', kind: 'observance', source: 'https://www.mod.gov.vn/vn/chi-tiet/sa-ttsk/sa-tt-qpan/quan-doi-nhan-dan-viet-nam-niem-tu-hao-dan-toc' },
     { id: 'christmas', monthDay: '12-25', kind: 'observance' },
 ]

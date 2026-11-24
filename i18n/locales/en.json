@@ -212,10 +212,6 @@
       "name": "Tết Hạ Nguyên",
       "description": "On the full moon of the tenth lunar month, some Vietnamese communities give thanks after the harvest with offerings of newly harvested rice."
     },
-    "japanCultureDay": {
-      "name": "Culture Day (Japan)",
-      "description": "Japan’s 3 November holiday, known as Bunka no Hi, celebrates culture, freedom and peace."
-    },
     "vietnamLawDay": {
       "name": "Vietnam Law Day",
       "description": "Observed on 9 November, the date Vietnam adopted its first Constitution in 1946."
@@ -231,10 +227,6 @@
     "vietnamRedCrossAnniversary": {
       "name": "Vietnam Red Cross Founding Anniversary",
       "description": "Marks the founding of the organization that became the Vietnam Red Cross Society on 23 November 1946."
-    },
-    "japanLaborThanksgiving": {
-      "name": "Labor Thanksgiving Day (Japan)",
-      "description": "Japan’s 23 November holiday, known as Kinrō Kansha no Hi, honors work and workers’ contributions."
     },
     "peoplesArmyDay": {
       "name": "Vietnam People’s Army Founding Day",

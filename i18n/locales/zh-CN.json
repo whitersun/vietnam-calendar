@@ -212,10 +212,6 @@
       "name": "越南下元节",
       "description": "农历十月十五。越南部分地区会以新米祭祀，感谢丰收。"
     },
-    "japanCultureDay": {
-      "name": "日本文化日",
-      "description": "日本在公历 11 月 3 日庆祝的法定节日，弘扬文化、自由与和平。"
-    },
     "vietnamLawDay": {
       "name": "越南法律日",
       "description": "公历 11 月 9 日，纪念越南于 1946 年通过第一部宪法。"
@@ -231,10 +227,6 @@
     "vietnamRedCrossAnniversary": {
       "name": "越南红十字会成立纪念日",
       "description": "纪念越南红十字会的前身组织于 1946 年 11 月 23 日成立。"
-    },
-    "japanLaborThanksgiving": {
-      "name": "日本勤劳感谢日",
-      "description": "日本在公历 11 月 23 日庆祝的法定节日，向劳动者致谢。"
     },
     "peoplesArmyDay": {
       "name": "越南人民军成立纪念日",

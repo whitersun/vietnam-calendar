@@ -66,7 +66,7 @@ test('November occasions can share a date without marking a Vietnamese day off',
   const events = getYearEvents(2026)
   const eventsOn = date => events.filter(event => event.date === date).map(event => [event.id, event.kind])
 
-  assert.deepEqual(eventsOn('2026-11-03'), [['japanCultureDay', 'observance']])
+  assert.deepEqual(eventsOn('2026-11-03'), [])
   assert.deepEqual(eventsOn('2026-11-18'), [
     ['doubleTenth', 'traditional'],
     ['nationalUnityDay', 'observance'],
@@ -75,17 +75,15 @@ test('November occasions can share a date without marking a Vietnamese day off',
     ['haNguyen', 'traditional'],
     ['vietnamHeritageDay', 'observance'],
     ['vietnamRedCrossAnniversary', 'observance'],
-    ['japanLaborThanksgiving', 'observance'],
   ])
   assert.deepEqual(getLunarDate('2026-11-23'), { day: 15, month: 10, year: 2026, leap: false })
 })
 
-test('Hạ Nguyên follows the lunar date while the Japanese observance stays on 23 November', () => {
+test('Hạ Nguyên follows the Vietnamese lunar date in later years', () => {
   const events = getYearEvents(2027)
   const festival = events.find(event => event.id === 'haNguyen')
-  assert.notEqual(festival.date, '2027-11-23')
+  assert.equal(festival.date, '2027-11-12')
   assert.deepEqual(getLunarDate(festival.date), { day: 15, month: 10, year: 2027, leap: false })
-  assert.equal(events.find(event => event.id === 'japanLaborThanksgiving').date, '2027-11-23')
 })
 
 test('imported lunar holiday rules use the same Vietnamese lunar date as the grid', () => {
