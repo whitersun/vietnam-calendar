@@ -21,9 +21,14 @@ interface PublicSectorSchedule {
 }
 
 type LunarEvent = Omit<CalendarEvent, 'date'> & { month: number; day: number }
+type SolarEvent = Omit<CalendarEvent, 'date'> & { monthDay: string; since?: number }
 
 export const HOLIDAY_SOURCE = 'https://vanban.chinhphu.vn/?pageid=27160&docid=198540'
 const UPSTREAM_SOURCE = 'https://github.com/commenthol/date-holidays/blob/master/data/countries/VN.yaml'
+const JAPAN_HOLIDAY_SOURCE = 'https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html'
+const VIETNAM_ANNIVERSARY_SOURCE = 'https://vanban.chinhphu.vn/default.aspx?docid=170518&pageid=27160'
+const VIETNAM_TRADITIONS_SOURCE = 'https://baotanglichsu.vn/VI/Articles/3096/68456/tet-viet.html'
+const TRADITIONAL_FESTIVALS_SOURCE = 'https://ngheandost.gov.vn/tap-chi-chuyen-san/chuyen-san-khxh-nv/chuyen-san-khxh-nv-so-2-2021-71.html?download=1&id=1'
 // Upstream rules supply the dates. These IDs retain the existing translated labels.
 const publicHolidayLabels: Record<string, { id: string; source?: string }> = {
     '01-01': { id: 'newYear' },
@@ -34,17 +39,37 @@ const publicHolidayLabels: Record<string, { id: string; source?: string }> = {
     'vietnamese 1-0-1': { id: 'tet' },
     'vietnamese 3-0-10': { id: 'hungKings' },
 }
-const solarEvents: { id: string; monthDay: string; kind: HolidayKind }[] = [
+const solarEvents: SolarEvent[] = [
+    { id: 'partyFounding', monthDay: '02-03', kind: 'observance', source: VIETNAM_ANNIVERSARY_SOURCE },
+    { id: 'physiciansDay', monthDay: '02-27', kind: 'observance', source: 'https://vnpa.moh.gov.vn/chuc-mung-ngay-thay-thuoc-viet-nam-27-02/' },
     { id: 'womensDay', monthDay: '03-08', kind: 'observance' },
+    { id: 'hoChiMinhBirthday', monthDay: '05-19', kind: 'observance', source: VIETNAM_ANNIVERSARY_SOURCE },
+    { id: 'childrensDay', monthDay: '06-01', kind: 'observance', source: 'https://tuoitre.daklak.gov.vn/tai-lieu-sinh-hoat-chi-doan/tai-lieu-sinh-hoat-chi-doan-thang-6-2020-2735.html' },
+    { id: 'revolutionaryPressDay', monthDay: '06-21', kind: 'observance', source: 'https://tuoitre.daklak.gov.vn/tai-lieu-sinh-hoat-chi-doan/tai-lieu-sinh-hoat-chi-doan-thang-6-2020-2735.html' },
+    { id: 'familyDay', monthDay: '06-28', kind: 'observance', since: 2001, source: 'https://vanban.chinhphu.vn/default.aspx?docid=8912&pageid=27160' },
+    { id: 'remembranceDay', monthDay: '07-27', kind: 'observance', source: 'https://baochinhphu.vn/luon-ghi-nho-tri-an-va-song-xung-dang-voi-nhung-nguoi-da-khuat-da-hy-sinh-vi-to-quoc-vi-nhan-dan-102240723111017936.htm' },
+    { id: 'augustRevolution', monthDay: '08-19', kind: 'observance', source: VIETNAM_ANNIVERSARY_SOURCE },
     { id: 'vietnameseWomensDay', monthDay: '10-20', kind: 'observance' },
+    { id: 'japanCultureDay', monthDay: '11-03', kind: 'observance', source: JAPAN_HOLIDAY_SOURCE },
+    { id: 'vietnamLawDay', monthDay: '11-09', kind: 'observance', since: 2013, source: 'https://baochinhphu.vn/de-cao-song-va-lam-viec-theo-hien-phap-102152389.htm' },
+    { id: 'nationalUnityDay', monthDay: '11-18', kind: 'observance', source: 'https://m.mattran.org.vn/van-ban-huong-dan/ngay-1811-duoc-lay-lam-ngay-ky-niem-thanh-lap-mat-tran-dan-toc-thong-nhat-viet-nam-tu-khi-nao-10575.html' },
     { id: 'teachersDay', monthDay: '11-20', kind: 'observance' },
+    { id: 'vietnamHeritageDay', monthDay: '11-23', kind: 'observance', since: 2005, source: 'https://luutru.gov.vn/cong-bo-gioi-thieu-tai-lieu/sac-lenh-so-65-sl-ngay-23-11-1945-tien-de-ngay-di-san-van-hoa-viet-nam.htm' },
+    { id: 'vietnamRedCrossAnniversary', monthDay: '11-23', kind: 'observance', source: 'https://www.redcross.org.vn/gioi-thieu/lich-su' },
+    { id: 'japanLaborThanksgiving', monthDay: '11-23', kind: 'observance', source: JAPAN_HOLIDAY_SOURCE },
+    { id: 'peoplesArmyDay', monthDay: '12-22', kind: 'observance', source: 'https://www.mod.gov.vn/vn/chi-tiet/sa-ttsk/sa-tt-qpan/quan-doi-nhan-dan-viet-nam-niem-tu-hao-dan-toc' },
     { id: 'christmas', monthDay: '12-25', kind: 'observance' },
 ]
 const lunarEvents: LunarEvent[] = [
     { id: 'firstFullMoon', month: 1, day: 15, kind: 'traditional' },
+    { id: 'coldFoodFestival', month: 3, day: 3, kind: 'traditional', source: VIETNAM_TRADITIONS_SOURCE },
+    { id: 'buddhaBirthday', month: 4, day: 15, kind: 'traditional', source: 'https://btgcp.gov.vn/pages/detail/1/Doi-net-ve-dao-Phat-va-Giao-hoi-Phat-giao-Viet-Nam.html' },
     { id: 'doanNgo', month: 5, day: 5, kind: 'traditional' },
     { id: 'vuLan', month: 7, day: 15, kind: 'traditional' },
     { id: 'midAutumn', month: 8, day: 15, kind: 'traditional' },
+    { id: 'doubleNinth', month: 9, day: 9, kind: 'traditional', source: TRADITIONAL_FESTIVALS_SOURCE },
+    { id: 'doubleTenth', month: 10, day: 10, kind: 'traditional', source: 'https://dukhach.quangbinh.gov.vn/web/dukhach/chi-tiet-tin/-/view-article/1/13978710067347/1131383291450567' },
+    { id: 'haNguyen', month: 10, day: 15, kind: 'traditional', source: VIETNAM_TRADITIONS_SOURCE },
     { id: 'kitchenGods', month: 12, day: 23, kind: 'traditional' },
 ]
 
@@ -99,7 +124,6 @@ export function getYearEvents(year: number): CalendarEvent[] {
         const date = `${year}-${monthDay}`
         if (date >= effectiveFrom) events.push({ id, date, kind: 'holiday', source })
     }
-    for (const { id, monthDay, kind } of solarEvents) events.push({ id, date: `${year}-${monthDay}`, kind })
     let date = `${year}-01-01`
     while (date.startsWith(`${year}-`)) {
         const lunar = getLunarDate(date)
@@ -112,8 +136,14 @@ export function getYearEvents(year: number): CalendarEvent[] {
         }
         date = addDays(date, 1)
     }
+    for (const { monthDay, since, ...event } of solarEvents) {
+        if (since === undefined || year >= since) events.push({ ...event, date: `${year}-${monthDay}` })
+    }
     const nationwide = new Set(events.filter(event => event.kind === 'holiday').map(event => `${event.id}:${event.date}`))
-    const calendarEvents = events.filter(event => event.kind !== 'publicSectorDayOff' || !nationwide.has(`${event.id}:${event.date}`))
+    const calendarEvents = events.filter(event => {
+        const hasHolidayVersion = event.kind === 'publicSectorDayOff' || event.kind === 'observance'
+        return !hasHolidayVersion || !nationwide.has(`${event.id}:${event.date}`)
+    })
     calendarEvents.sort((a, b) => a.date.localeCompare(b.date))
     eventCache.set(year, calendarEvents)
     return calendarEvents

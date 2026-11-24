@@ -164,6 +164,82 @@
       "name": "War Invalids and Martyrs Day",
       "description": "July 27 honours those who served and sacrificed for Vietnam. It is a paid public holiday from 2027."
     },
+    "partyFounding": {
+      "name": "Founding of the Communist Party of Vietnam",
+      "description": "Marks the founding of the Communist Party of Vietnam on 3 February 1930."
+    },
+    "physiciansDay": {
+      "name": "Vietnamese Doctors’ Day",
+      "description": "Observed on 27 February to honor people who work in healthcare."
+    },
+    "coldFoodFestival": {
+      "name": "Vietnamese Cold Food Festival",
+      "description": "On the third day of the third lunar month, many families offer rice dumplings to their ancestors."
+    },
+    "buddhaBirthday": {
+      "name": "Buddha’s Birthday",
+      "description": "On the full moon of the fourth lunar month, Buddhists commemorate the birth of Shakyamuni Buddha."
+    },
+    "hoChiMinhBirthday": {
+      "name": "Ho Chi Minh’s Birthday",
+      "description": "Commemorates the birth of President Ho Chi Minh on 19 May 1890."
+    },
+    "childrensDay": {
+      "name": "International Children’s Day",
+      "description": "Observed in Vietnam on 1 June to celebrate children and recognize their rights."
+    },
+    "revolutionaryPressDay": {
+      "name": "Vietnam Revolutionary Press Day",
+      "description": "Marks the publication of the first issue of Thanh Niên on 21 June 1925."
+    },
+    "familyDay": {
+      "name": "Vietnamese Family Day",
+      "description": "Observed annually on 28 June to celebrate Vietnamese families."
+    },
+    "augustRevolution": {
+      "name": "August Revolution Day",
+      "description": "Marks the success of the August Revolution uprising in Hanoi on 19 August 1945."
+    },
+    "doubleNinth": {
+      "name": "Double Ninth Festival",
+      "description": "A traditional festival on the ninth day of the ninth lunar month."
+    },
+    "doubleTenth": {
+      "name": "Tết Thường Tân",
+      "description": "A traditional Vietnamese festival on the tenth day of the tenth lunar month, also called Tết Trùng thập."
+    },
+    "haNguyen": {
+      "name": "Tết Hạ Nguyên",
+      "description": "On the full moon of the tenth lunar month, some Vietnamese communities give thanks after the harvest with offerings of newly harvested rice."
+    },
+    "japanCultureDay": {
+      "name": "Culture Day (Japan)",
+      "description": "Japan’s 3 November holiday, known as Bunka no Hi, celebrates culture, freedom and peace."
+    },
+    "vietnamLawDay": {
+      "name": "Vietnam Law Day",
+      "description": "Observed on 9 November, the date Vietnam adopted its first Constitution in 1946."
+    },
+    "nationalUnityDay": {
+      "name": "National Great Unity Festival",
+      "description": "Observed on 18 November, the traditional anniversary of the Vietnam Fatherland Front."
+    },
+    "vietnamHeritageDay": {
+      "name": "Vietnam Cultural Heritage Day",
+      "description": "Observed on 23 November to celebrate and preserve Vietnam’s cultural heritage."
+    },
+    "vietnamRedCrossAnniversary": {
+      "name": "Vietnam Red Cross Founding Anniversary",
+      "description": "Marks the founding of the organization that became the Vietnam Red Cross Society on 23 November 1946."
+    },
+    "japanLaborThanksgiving": {
+      "name": "Labor Thanksgiving Day (Japan)",
+      "description": "Japan’s 23 November holiday, known as Kinrō Kansha no Hi, honors work and workers’ contributions."
+    },
+    "peoplesArmyDay": {
+      "name": "Vietnam People’s Army Founding Day",
+      "description": "Observed on 22 December, which is also All-People’s National Defense Day in Vietnam."
+    },
     "christmas": {
       "name": "Christmas Day",
       "description": "December 25. Not automatically a day off in Vietnam."

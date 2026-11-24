@@ -62,6 +62,32 @@ test('holiday dates are distinct from annual substitute-day schedules', () => {
   assert.deepEqual(events.filter(event => event.date === '2026-04-27').map(event => event.kind), ['publicSectorDayOff'])
 })
 
+test('November occasions can share a date without marking a Vietnamese day off', () => {
+  const events = getYearEvents(2026)
+  const eventsOn = date => events.filter(event => event.date === date).map(event => [event.id, event.kind])
+
+  assert.deepEqual(eventsOn('2026-11-03'), [['japanCultureDay', 'observance']])
+  assert.deepEqual(eventsOn('2026-11-18'), [
+    ['doubleTenth', 'traditional'],
+    ['nationalUnityDay', 'observance'],
+  ])
+  assert.deepEqual(eventsOn('2026-11-23'), [
+    ['haNguyen', 'traditional'],
+    ['vietnamHeritageDay', 'observance'],
+    ['vietnamRedCrossAnniversary', 'observance'],
+    ['japanLaborThanksgiving', 'observance'],
+  ])
+  assert.deepEqual(getLunarDate('2026-11-23'), { day: 15, month: 10, year: 2026, leap: false })
+})
+
+test('Hạ Nguyên follows the lunar date while the Japanese observance stays on 23 November', () => {
+  const events = getYearEvents(2027)
+  const festival = events.find(event => event.id === 'haNguyen')
+  assert.notEqual(festival.date, '2027-11-23')
+  assert.deepEqual(getLunarDate(festival.date), { day: 15, month: 10, year: 2027, leap: false })
+  assert.equal(events.find(event => event.id === 'japanLaborThanksgiving').date, '2027-11-23')
+})
+
 test('imported lunar holiday rules use the same Vietnamese lunar date as the grid', () => {
   const event = getYearEvents(2050).find(event => event.id === 'hungKings')
   assert.deepEqual(getLunarDate(event.date), { day: 10, month: 3, year: 2050, leap: false })
@@ -80,10 +106,11 @@ test('Vietnam Culture Day is a paid holiday starting in 2026', () => {
   }
 })
 
-test('an official announcement can add a holiday before it appears upstream', () => {
-  assert.ok(!getYearEvents(2026).some(event => event.id === 'remembranceDay'))
-  const events = getYearEvents(2027).filter(event => event.date === '2027-07-27')
-  assert.deepEqual(events.map(event => [event.id, event.kind]), [['remembranceDay', 'holiday']])
+test('the existing 27 July observance becomes a paid holiday in 2027', () => {
+  for (const [year, kind] of [[2026, 'observance'], [2027, 'holiday']]) {
+    const events = getYearEvents(year).filter(event => event.id === 'remembranceDay')
+    assert.deepEqual(events.map(event => [event.date, event.kind]), [[`${year}-07-27`, kind]])
+  }
 })
 
 test('confirmed public-sector schedules display days off and make-up workdays without changing general holidays', () => {

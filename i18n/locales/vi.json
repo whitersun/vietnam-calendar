@@ -164,6 +164,82 @@
             "name": "Ngày Tổ quốc tri ân",
             "description": "Ngày Thương binh, liệt sĩ (27/7). Từ năm 2027, người lao động được nghỉ một ngày và hưởng nguyên lương."
         },
+    "partyFounding": {
+      "name": "Ngày thành lập Đảng Cộng sản Việt Nam",
+      "description": "Kỷ niệm ngày thành lập Đảng Cộng sản Việt Nam 3 tháng 2 năm 1930."
+    },
+    "physiciansDay": {
+      "name": "Ngày Thầy thuốc Việt Nam",
+      "description": "Ngày 27 tháng 2, dịp tri ân những người làm công tác y tế."
+    },
+    "coldFoodFestival": {
+      "name": "Tết Hàn thực",
+      "description": "Mùng 3 tháng 3 âm lịch, nhiều gia đình làm bánh trôi, bánh chay để dâng cúng tổ tiên."
+    },
+    "buddhaBirthday": {
+      "name": "Lễ Phật đản",
+      "description": "Rằm tháng 4 âm lịch, dịp Phật tử tưởng niệm ngày Đức Phật Thích Ca đản sinh."
+    },
+    "hoChiMinhBirthday": {
+      "name": "Ngày sinh Chủ tịch Hồ Chí Minh",
+      "description": "Kỷ niệm ngày sinh Chủ tịch Hồ Chí Minh 19 tháng 5 năm 1890."
+    },
+    "childrensDay": {
+      "name": "Ngày Quốc tế Thiếu nhi",
+      "description": "Ngày 1 tháng 6, dịp dành cho trẻ em và nhắc nhở về quyền trẻ em."
+    },
+    "revolutionaryPressDay": {
+      "name": "Ngày Báo chí Cách mạng Việt Nam",
+      "description": "Ngày 21 tháng 6, kỷ niệm ngày Báo Thanh Niên ra số đầu tiên năm 1925."
+    },
+    "familyDay": {
+      "name": "Ngày Gia đình Việt Nam",
+      "description": "Ngày 28 tháng 6 hằng năm, dịp tôn vinh các giá trị gia đình."
+    },
+    "augustRevolution": {
+      "name": "Ngày Cách mạng Tháng Tám",
+      "description": "Kỷ niệm thắng lợi của Tổng khởi nghĩa tại Hà Nội ngày 19 tháng 8 năm 1945."
+    },
+    "doubleNinth": {
+      "name": "Tết Trùng cửu",
+      "description": "Dịp truyền thống vào mùng 9 tháng 9 âm lịch, còn gọi là Tết Trùng dương."
+    },
+    "doubleTenth": {
+      "name": "Tết Thường Tân",
+      "description": "Dịp truyền thống vào mùng 10 tháng 10 âm lịch, còn gọi là Tết Trùng thập."
+    },
+    "haNguyen": {
+      "name": "Tết Hạ Nguyên",
+      "description": "Rằm tháng 10 âm lịch. Ở một số nơi, người dân dâng cúng cơm mới để tạ ơn sau mùa gặt."
+    },
+    "japanCultureDay": {
+      "name": "Ngày Văn hóa Nhật Bản",
+      "description": "Ngày lễ 3 tháng 11 của Nhật Bản, còn gọi là Bunka no Hi, tôn vinh văn hóa, tự do và hòa bình."
+    },
+    "vietnamLawDay": {
+      "name": "Ngày Pháp luật Việt Nam",
+      "description": "Ngày 9 tháng 11, dịp tôn vinh Hiến pháp và pháp luật, gắn với ngày thông qua Hiến pháp năm 1946."
+    },
+    "nationalUnityDay": {
+      "name": "Ngày hội Đại đoàn kết toàn dân tộc",
+      "description": "Ngày 18 tháng 11, gắn với ngày truyền thống Mặt trận Tổ quốc Việt Nam."
+    },
+    "vietnamHeritageDay": {
+      "name": "Ngày Di sản văn hóa Việt Nam",
+      "description": "Ngày 23 tháng 11, dịp tôn vinh và phát huy giá trị di sản văn hóa Việt Nam."
+    },
+    "vietnamRedCrossAnniversary": {
+      "name": "Ngày thành lập Hội Chữ thập đỏ Việt Nam",
+      "description": "Ngày 23 tháng 11 năm 1946, tổ chức tiền thân của Hội Chữ thập đỏ Việt Nam được thành lập."
+    },
+    "japanLaborThanksgiving": {
+      "name": "Ngày Cảm tạ Lao động (Nhật Bản)",
+      "description": "Ngày lễ 23 tháng 11 của Nhật Bản, còn gọi là Kinrō Kansha no Hi, ghi nhận công sức lao động."
+    },
+    "peoplesArmyDay": {
+      "name": "Ngày thành lập Quân đội nhân dân Việt Nam",
+      "description": "Ngày 22 tháng 12, đồng thời là Ngày hội Quốc phòng toàn dân."
+    },
         "christmas": {
             "name": "Giáng sinh",
             "description": "Ngày 25 tháng 12. Không tự động là ngày nghỉ tại Việt Nam."
